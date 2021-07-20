@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: MIT
+// This code is licensed under the MIT license.
+
 let PSD = require("psd");
 let fs = require("fs");
 let path = require("path");
