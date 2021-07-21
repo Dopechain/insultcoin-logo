@@ -17,8 +17,8 @@ fs.readdirSync("./logos/psd").forEach(async (file) => {
     let psd = await PSD.open(path.join("logos", "psd", file));
     console.log("PSD opened for " + file);
     await psd.image.saveAsPng(
-      path.join("logos", "png", path.basename(file) + ".png")
+      path.join("logos", "png", path.parse(file).name + ".png")
     );
-    console.log("Saved as PNG: " + path.basename(file) + ".png");
+    console.log("Saved as PNG: " + path.parse(file).name + ".png");
   }
 });
