@@ -1,4 +1,4 @@
-# InsultCoin Logos
+# InsultCoin Logos and Images and Stuff
 
 This should not be published to NPM. The canonical source for these are at [Dopechain](https://github.com/Dopechain/insultcoin-logos).  
 See LICENSE for more info, this project is dual licensed (CC-BY for images, MIT for code)
