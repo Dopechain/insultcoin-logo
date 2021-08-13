@@ -7,7 +7,12 @@ let path = require("path");
 let colors = require("colors");
 
 console.log("InsultCoin Logos".brightRed);
-console.log("Run this before you PR to GitHub, please".red);
+console.log("Run this before you commit to GitHub, please".red);
+
+// delete old picture whatever files
+fs.rmdirSync("./logos/png", { recursive: true });
+console.log("Deleted old PNGs!".brightRed);
+fs.mkdirSync("./logos/png");
 
 fs.readdirSync("./logos/psd").forEach(async (file) => {
   if (path.extname(file) == ".psd") {
